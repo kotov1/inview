@@ -1,0 +1,30 @@
+- var page = "main"
+
+doctype html
+html(lang="ru")
+
+	include pug-modules/head
+
+	body
+
+		// header
+		include pug-modules/header
+		// /.header
+
+		
+		section.hero(style="background-image: url('img/bg-1.jpg')")
+			.container
+				h1.h1.hero__title Masstank - Омут
+				h4.h4.hero__subtitle музыкальный клип
+				a.btn.hero__btn(href="#") смотреть
+				a.mouse.anchor(href="#")
+
+
+		// footer
+		include pug-modules/footer
+		// /.footer
+	
+
+		
+
+
