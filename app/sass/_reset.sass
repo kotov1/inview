@@ -71,15 +71,21 @@ sub
 sup
 	top: -0.5em
 
+a, button
+	&:focus
+		outline: none
+
 a
 	color: $link-color
 	text-decoration: none
 	background-color: transparent
 	-webkit-text-decoration-skip: objects
 	@include trs(.05s)
-	&:focus, &:hover
+	&:hover
 		color: $link-hover
 		text-decoration: underline
+	&:focus
+		box-shadow: 0 0 5px rgba($accent-color, .5)
 	&:active, &:hover
 		outline-width: 0
 	&:not([href]):not([tabindex])
@@ -124,8 +130,6 @@ button
 	border: none
 	border-radius: 0
 	cursor: pointer
-	&:focus
-		outline: none
 
 button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner
 	border-style: none
@@ -189,3 +193,19 @@ textarea
 
 [hidden]
 	display: none !important
+
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close
+	color: $accent-color
+
+
+.slick-slide
+	outline: none
+
+
+
+
+
+
+
+

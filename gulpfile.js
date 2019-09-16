@@ -37,6 +37,9 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
+		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/libs/wow.min.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('scripts.js'))

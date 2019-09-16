@@ -23,35 +23,112 @@
     <!-- header-->
     <header class="header">
       <div class="container">
+        <div class="mob-header">
+          <div class="mob-logo"><img class="img" src="img/toplogo.png" alt="Inview"></div><a class="header-tel hover" href="tel:+79059509998">+7 (905) 950-99-98</a>
+        </div>
         <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#">О нас   </a></li>
-            <li><a href="#">Новости  </a></li>
-            <li><a href="#">Команда  </a></li>
-            <li>
-              <div class="toplogo"><img class="img" src="img/toplogo.png" alt="Inview"></div>
-            </li>
-            <li><a href="#">Видео</a></li>
-            <li><a href="#">Сайты</a></li>
-            <li><a href="#">Контакты  </a></li>
+          <div class="nav__toggle"><span class="nav__toggle-ic"></span></div>
+          <ul class="nav__list">
+            <li><a class="hover" href="#">О нас</a></li>
+            <li><a class="hover" href="#">Новости</a></li>
+            <li><a class="hover" href="#">Команда</a></li>
+            <li class="desktop-logo"><img class="img" src="img/toplogo.png" alt="Inview"></li>
+            <li><a class="hover" href="#">Видео</a></li>
+            <li><a class="hover" href="#">Сайты</a></li>
+            <li><a class="hover" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- /.header-->
+    <!-- hero-->
     <section class="hero" style="background-image: url('img/bg-1.jpg')">
       <div class="container">
         <h1 class="h1 hero__title">Masstank - Омут</h1>
-        <h4 class="h4 hero__subtitle">музыкальный клип</h4><a class="btn hero__btn" href="#">смотреть</a><a class="mouse anchor" href="#"></a>
+        <h4 class="h4 hero__subtitle">музыкальный клип</h4><a class="btn hero__btn video-link js-video" href="https://www.youtube.com/watch?v=u8rjvnzJvK8?autoplay=1&amp;amp;rel=0">смотреть</a><a class="mouse anchor" href="#"></a>
       </div>
     </section>
-    <!-- footer-->
-    <footer class="footer"></footer>
-    <!-- Скрипты-->
-    <!-- Jquery с облака и замена в случае отсутствия доступа к облаку -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="libs/jquery/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="js/scripts.js"></script>
-    <!-- /.footer-->
+    <!-- /.hero-->
   </body>
+  <!-- examples-->
+  <section class="section examples">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="h2">Последние работы<span class="color-accent">.</span></h2><a class="btn section-link" href="videos.html">смотреть все</a>
+      </div>
+      <div class="examples-slider">
+        <div class="slide"><a class="video js-video" data-video="u8rjvnzJvK8" style="background-image: url('img/video-poster-1.jpg')">
+            <h4 class="h4 video__title">Masstank - Омут</h4></a></div>
+        <div class="slide"><a class="video js-video" data-video="nXqoD3ZjMnI" style="background-image: url('img/video-poster-2.jpg')">
+            <h4 class="h4 video__title">Nechaev - Новогодняя</h4></a></div>
+        <div class="slide"><a class="video js-video" data-video="u8rjvnzJvK8" style="background-image: url('img/video-poster-1.jpg')">
+            <h4 class="h4 video__title">Masstank - Омут</h4></a></div>
+        <div class="slide"><a class="video js-video" data-video="nXqoD3ZjMnI" style="background-image: url('img/video-poster-2.jpg')">
+            <h4 class="h4 video__title">Nechaev - Новогодняя</h4></a></div>
+        <div class="slide"><a class="video js-video" data-video="u8rjvnzJvK8" style="background-image: url('img/video-poster-1.jpg')">
+            <h4 class="h4 video__title">Masstank - Омут</h4></a></div>
+        <div class="slide"><a class="video js-video" data-video="nXqoD3ZjMnI" style="background-image: url('img/video-poster-2.jpg')">
+            <h4 class="h4 video__title">Nechaev - Новогодняя</h4></a></div>
+      </div>
+      <div class="slider-arrows"></div>
+    </div>
+  </section>
+  <!-- /.examples-->
+  <section class="section news">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="h2">Новости<span class="color-accent">.</span></h2><a class="btn section-link" href="news.html">смотреть все</a>
+      </div>
+      <div class="news__row">
+        <div class="news-item"><a href="#">
+            <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="news-item__date">19 января 2019</div></a></div>
+        <div class="news-item"><a href="#">
+            <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="news-item__date">19 января 2019</div></a></div>
+        <div class="news-item"><a href="#">
+            <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="news-item__date">19 января 2019</div></a></div>
+        <div class="news-item"><a href="#">
+            <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="news-item__date">19 января 2019</div></a></div>
+      </div>
+    </div>
+  </section>
+  <!-- cta-->
+  <section class="section cta">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2 class="h2">Готовы к сотрудничеству?</h2>
+          <h3 class="h3">Заполните форму на нашем сайте, мы назначим вам встречу</h3>
+        </div>
+        <button class="btn section-link js-call-modal" type="button">оставить заявку</button>
+      </div>
+    </div>
+  </section>
+  <!-- /.cta-->
+  <!-- footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row flex">
+        <div class="footer-logo"><img class="img" src="img/footer-logo.png" alt="Inview"></div>
+        <div class="footer-contacts">
+          <div class="footer-contacts__item"><span class="color-accent">Телефон: </span><a class="hover" href="tel:+79059509998">+7 (905) 950-99-98</a></div>
+          <div class="footer-contacts__item"><span class="color-accent">E-mail: </span><a class="hover" href="mailto:client@inview.pro">client@inview.pro</a></div>
+        </div>
+        <div class="footer-info">
+          <p>Copyright 2017 - 2019 InView</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Скрипты-->
+  <!-- Jquery с облака и замена в случае отсутствия доступа к облаку -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="libs/jquery/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/scripts.js"></script>
+  <!-- /.footer
+  -->
 </html>

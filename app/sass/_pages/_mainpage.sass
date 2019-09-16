@@ -1,6 +1,9 @@
-/* ----- Mainpage ----- */
+/* ------------------------------------- 
+	Mainpage 
+	------------------------------------- */
 
 
+/* ----- hero ----- */
 .hero
 	position: relative
 	z-index: 1
@@ -10,6 +13,7 @@
 	display: flex
 	align-items: center
 	background-repeat: no-repeat
+	background-position: 50% 50%
 	background-size: cover
 	text-align: center
 	&::before
@@ -30,8 +34,6 @@
 	&__btn
 		margin-top: 50px
 	
-
-
 .mouse
 	width: 32px
 	height: 49px
@@ -59,6 +61,161 @@
 	to
 		top: 28px
 
+
+@include max-screen($md)
+	.mouse
+		margin-top: 7vh
+
+@media screen and (max-height: 500px) 
+	.hero
+		min-height: 500px	
+
+
+
+
+
+
+
+
+/* ----- examples ----- */
+.examples
+	padding-bottom: 7vh
+	overflow: hidden
+	&-slider
+		width: calc(100% + 60px)
+		.slick-list
+			overflow: visible
+		.video
+			margin-right: 60px
+
+.video
+	display: block
+	width: 291px
+	height: 173px
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+	&::before
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		border: 2px solid transparent
+		background: rgba($black, .3)
+		opacity: 0
+		z-index: 0
+		transition-property: opacity, border-color
+		transition-duration: .1s, .2s
+		transition-delay: 0s, .1s
+		transition-timing-function: linear
+	&__title
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0
+		color: $white
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		will-change: transform
+		opacity: 0
+		transform: translate3d(0, 20px, 0)
+		transition: all .15s linear
+	&:hover
+		text-decoration: none
+		&::before
+			opacity: 1
+			border-color: $accent-color
+		.video__title
+			opacity: 1
+			transform: translate3d(0,0,0)
+
+
+@include max-screen($xl)
+	.examples-slider
+		width: 100%
+		.video
+			margin-right: 30px
+
+@include max-screen($lg)
+	.examples-slider
+		.video
+			width: 320px
+
+@include max-screen($md)
+	.examples-slider
+		.video
+			width: 320px
+			margin: 0 auto
+		.slick-list
+			overflow: hidden
+
+@include max-screen($sm)
+	.examples-slider
+		.video
+			width: 290px
+
+
+
+
+
+
+
+/* ----- examples ----- */
+.news
+	padding-bottom: 1px
+	background-color: #131313
+	&__row
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		width: calc(50% - 50px)
+		margin-bottom: 50px
+		a:hover
+			text-decoration: none
+			.news-item__content
+				text-decoration: underline
+		&__content
+			color: $white
+		&__date
+			color: $accent-color
+
+@include max-screen($lg)
+	.news-item
+		width: calc(50% - 25px)
+
+@include max-screen($md)
+	.news__row
+		display: block
+	.news-item
+		width: 100%
+
+
+
+/* ----- cta ----- */
+.cta
+	padding-bottom: 1px
+	background-color: #0f0f0f
+	@include max-screen($lg)
+		.section-link
+			margin-top: 30px
+	
+
+
+
+
+
+
+
+		
+	
 
 
 

@@ -1,22 +1,27 @@
 header.header
 	.container
+		.mob-header
+			.mob-logo
+				img.img(src="img/toplogo.png", alt="Inview")
+			a.header-tel.hover(href="tel:+79059509998") +7 (905) 950-99-98
 		nav.nav
-			ul.nav-list
+			.nav__toggle
+				span.nav__toggle-ic
+			ul.nav__list
 				li
-					a(href="#") О нас   
+					a.hover(href="#") О нас
 				li
-					a(href="#") Новости  
+					a.hover(href="#") Новости
 				li
-					a(href="#") Команда  
+					a.hover(href="#") Команда
+				li.desktop-logo
+					img.img(src="img/toplogo.png", alt="Inview")
 				li
-					.toplogo
-						img.img(src="img/toplogo.png", alt="Inview")
+					a.hover(href="#") Видео
 				li
-					a(href="#") Видео
+					a.hover(href="#") Сайты
 				li
-					a(href="#") Сайты
-				li
-					a(href="#") Контакты  
+					a.hover(href="#") Контакты
 
 
 

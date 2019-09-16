@@ -12,19 +12,84 @@ html(lang="ru")
 		// /.header
 
 		
+		// hero
 		section.hero(style="background-image: url('img/bg-1.jpg')")
 			.container
 				h1.h1.hero__title Masstank - Омут
 				h4.h4.hero__subtitle музыкальный клип
-				a.btn.hero__btn(href="#") смотреть
+				a.btn.hero__btn.video-link.js-video(href="https://www.youtube.com/watch?v=u8rjvnzJvK8?autoplay=1&amp;rel=0") смотреть
 				a.mouse.anchor(href="#")
+		// /.hero
 
 
-		// footer
-		include pug-modules/footer
-		// /.footer
+	// examples
+	section.section.examples
+		.container
+			.section-title
+				h2.h2 Последние работы
+					span.color-accent .
+				a.btn.section-link(href="videos.html") смотреть все
+			.examples-slider
+				.slide
+					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+						h4.h4.video__title Masstank - Омут
+				.slide
+					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+						h4.h4.video__title Nechaev - Новогодняя
+				.slide
+					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+						h4.h4.video__title Masstank - Омут
+				.slide
+					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+						h4.h4.video__title Nechaev - Новогодняя
+				.slide
+					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+						h4.h4.video__title Masstank - Омут
+				.slide
+					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+						h4.h4.video__title Nechaev - Новогодняя
+			
+			.slider-arrows
+
+	// /.examples
+
+
+	section.section.news
+		.container
+			.section-title
+				h2.h2 Новости
+					span.color-accent .
+				a.btn.section-link(href="news.html") смотреть все
+
+			.news__row
+				.news-item
+					a(href="#")
+						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.news-item__date 19 января 2019
+				.news-item
+					a(href="#")
+						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.news-item__date 19 января 2019
+				.news-item
+					a(href="#")
+						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.news-item__date 19 января 2019
+				.news-item
+					a(href="#")
+						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.news-item__date 19 января 2019
+			
+
 	
+	// cta
+	include pug-modules/cta
+	// /.cta
+				
+
+
+	// footer
+	include pug-modules/footer
+	// /.footer
+
 
 		
-
-
