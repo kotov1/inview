@@ -1,0 +1,131 @@
+- var page = "team"
+
+doctype html
+html(lang="ru")
+
+	include pug-modules/head
+
+	body
+
+		.page
+
+			// header
+			include pug-modules/header
+			// /.header
+
+
+		
+			// team
+			section.section
+				.container
+					h2.h2.page-title Команда
+						span.color-accent .
+
+					.team
+						.team__row.flex
+							.team-member.team-member--hover
+								.team-member__img
+									img(src="img/team/img-team-1.jpg", alt="alt")
+								.h3.team-member__name Name Name
+								span.team-member__position Профессия
+								.content.team-content
+									ul.two-columns
+										li Lorem Ipsum is simply dummy text 
+										li Of the printing and typesetting industry. 
+										li Lorem Ipsum has been the industry's standard 
+										li Dummy text ever since the 1500s
+										li Lorem Ipsum is simply dummy text 
+										li Of the printing and typesetting industry. 
+										li Lorem Ipsum has been the industry's standard 
+										li Dummy text ever since the 1500s
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+							.team-member
+								.team-member__img
+									img(src="img/team/img-team-2.jpg", alt="alt")
+								.h3.team-member__name Loremipsum Contrary
+								span.team-member__position Профессия
+								.content.team-content
+									ul
+										li Lorem Ipsum is simply dummy text 
+										li Of the printing and typesetting industry. 
+										li Lorem Ipsum has been the industry's standard 
+										li Dummy text ever since the 1500s
+										li Lorem Ipsum is simply dummy text 
+										li Of the printing and typesetting industry. 
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+							.team-member
+								.team-member__img
+									img(src="img/team/img-team-3.jpg", alt="alt")
+								.h3.team-member__name Name Name
+								span.team-member__position Профессия
+								.content.team-content
+									ul
+										li Lorem Ipsum is simply dummy text 
+										li Of the printing and typesetting industry. 
+										li Lorem Ipsum has been the industry's standard 
+										li Dummy text ever since the 1500s
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+							.team-member
+								.team-member__img
+									img(src="img/team/img-team-4.jpg", alt="alt")
+								.h3.team-member__name Name Name
+								span.team-member__position Профессия
+								.content.team-content
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+							.team-member
+								.team-member__img
+									img(src="img/team/img-team-5.jpg", alt="alt")
+								.h3.team-member__name Name Name
+								span.team-member__position Профессия
+								.content.team-content
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ex corporis? Aspernatur ut amet sed perspiciatis qui, necessitatibus pariatur. Soluta eveniet ipsam maxime in minima?
+						
+
+						.block-min-height
+
+									
+			// /.team
+
+
+			// examples
+			section#examples.section.examples
+				.container
+					h2.h2 Работы
+						span.color-accent .
+					.examples-slider
+						.slide
+							a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+								h4.h4.video__title Masstank - Омут
+						.slide
+							a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+								h4.h4.video__title Nechaev - Новогодняя
+						.slide
+							a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+								h4.h4.video__title Masstank - Омут
+						.slide
+							a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+								h4.h4.video__title Nechaev - Новогодняя
+						.slide
+							a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+								h4.h4.video__title Masstank - Омут
+						.slide
+							a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+								h4.h4.video__title Nechaev - Новогодняя
+					
+					.slider-arrows
+
+			// /.examples
+
+
+
+
+			// footer
+			include pug-modules/footer
+			// /.footer
+
+
+				

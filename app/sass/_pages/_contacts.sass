@@ -1,0 +1,66 @@
+/* ------------------------------------- 
+	Contacts 
+	------------------------------------- */
+
+.contacts
+	.contacts-info
+		font-size: 22px
+
+
+
+/* ----- form ----- */
+.contacts-form
+	max-width: 610px
+	margin: 7vh 0
+	padding-bottom: 1px
+
+.form
+	&__row
+		margin: 0 -15px 50px
+		align-items: flex-end
+	&-col
+		padding: 0 15px
+		&-1
+			width: 50%
+		&-2
+			width: 75%
+		&-3
+			width: 25%
+		.submit
+			transform: translateY(50%)
+
+	
+
+
+@include max-screen($md)
+	.form__row
+		margin: 0
+	.form-col
+		width: 100%
+		padding: 0
+		text-align: center
+		.submit
+			transform: none
+			margin-top: 30px
+	.form-item
+		margin-bottom: 30px
+
+	.contacts .contacts-info
+		font-size: 18px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

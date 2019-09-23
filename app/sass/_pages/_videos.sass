@@ -1,0 +1,78 @@
+/* ------------------------------------- 
+	Videos page 
+	------------------------------------- */
+	
+	
+.videos
+	&__row
+		margin: 0 -25px
+	&__col
+		width: 33.3333%
+		padding: 0 25px
+
+
+.video
+	&-block
+		margin-bottom: 50px
+		.video
+			margin-bottom: 25px
+			&::before
+				content: '\e800'
+				font-family: "fontello"
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 40px
+				color: transparent
+			&:hover
+				&::before
+					color: $white
+		&__title
+			margin-bottom: .1em
+		&__label
+			color: $accent-color
+
+
+@include max-screen($xl)
+	.videos
+		&__row
+			margin: 50px -15px 0
+		&__col
+			padding: 0 15px
+
+
+@include max-screen($lg)
+	.videos__row
+		margin-left: 0
+		margin-right: 0
+		justify-content: space-between
+	.videos__col
+		width: calc(50% - 15px)
+		padding: 0
+
+	.video-block .video
+		width: 100%
+		
+
+@include max-screen($md)
+	.videos__col
+		width: 100%
+	.video-block
+		max-width: 400px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

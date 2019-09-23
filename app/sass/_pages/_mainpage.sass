@@ -13,7 +13,7 @@
 	display: flex
 	align-items: center
 	background-repeat: no-repeat
-	background-position: 50% 50%
+	background-position: 60% 50%
 	background-size: cover
 	text-align: center
 	&::before
@@ -76,7 +76,6 @@
 
 
 
-
 /* ----- examples ----- */
 .examples
 	padding-bottom: 7vh
@@ -90,7 +89,7 @@
 
 .video
 	display: block
-	width: 291px
+	width: 297px
 	height: 173px
 	position: relative
 	background-repeat: no-repeat
@@ -108,9 +107,9 @@
 		background: rgba($black, .3)
 		opacity: 0
 		z-index: 0
-		transition-property: opacity, border-color
-		transition-duration: .1s, .2s
-		transition-delay: 0s, .1s
+		transition-property: opacity, border-color, color
+		transition-duration: .1s, .15s, .1s
+		transition-delay: 0s, .1s, .1s
 		transition-timing-function: linear
 	&__title
 		display: flex
@@ -142,6 +141,16 @@
 		width: 100%
 		.video
 			margin-right: 30px
+			&__title
+				opacity: 1
+				transform: translate3d(0,0,0)
+	
+	.video
+		&::before
+			opacity: 1
+			border-color: $accent-color
+			color: $white !important
+
 
 @include max-screen($lg)
 	.examples-slider

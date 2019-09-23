@@ -1,0 +1,63 @@
+- var page = "contacts"
+
+doctype html
+html(lang="ru")
+
+	include pug-modules/head
+
+	body
+
+		.page
+
+			// header
+			include pug-modules/header
+			// /.header
+
+
+		
+			// contacts
+			section.section.contacts
+				.container
+					h2.h2.page-title Контакты
+						span.color-accent .
+					
+					.contacts-info
+						div.contacts-info__item
+							span.color-accent Телефон: 
+							a.hover(href="tel:+79059509998") +7 (905) 950-99-98
+						div.contacts-info__item
+							span.color-accent E-mail: 
+							a.hover(href="mailto:client@inview.pro") client@inview.pro
+
+					.contacts-form
+						form(action="#")
+							.form__row.flex
+								.form-col.form-col-1
+									.form-item
+										input.input(type="text", name="name", placeholder="Ваше имя", required)
+										span.input-hint Ваше имя
+								.form-col.form-col-1
+									.form-item
+										input.input(type="tel", name="phone", placeholder="Ваш телефон", required)
+										span.input-hint Ваш телефон
+							.form__row.flex
+								.form-col.form-col-2
+									.form-item
+										textarea.input.textarea(name="message", placeholder="Ваше сообщение")
+										span.input-hint Ваше сообщение
+								.form-col.form-col-3
+									button.btn.submit(type="submit") отправить
+
+
+
+			// /.contacts
+
+
+
+
+			// footer
+			include pug-modules/footer
+			// /.footer
+
+
+				

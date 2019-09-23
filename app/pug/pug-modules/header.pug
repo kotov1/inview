@@ -1,27 +1,36 @@
-header.header
+//- header.header
+header(class=(page=="main") ? 'header main-header' : 'header')
 	.container
 		.mob-header
 			.mob-logo
-				img.img(src="img/toplogo.png", alt="Inview")
+				if page == "main"
+					img.img(src="img/toplogo.png", alt="Inview")
+				else
+					a(href="index.html")
+						img.img(src="img/toplogo.png", alt="Inview")
 			a.header-tel.hover(href="tel:+79059509998") +7 (905) 950-99-98
 		nav.nav
 			.nav__toggle
 				span.nav__toggle-ic
 			ul.nav__list
-				li
-					a.hover(href="#") О нас
-				li
-					a.hover(href="#") Новости
-				li
-					a.hover(href="#") Команда
+				li(class=(page=="about") ? 'active' : '')
+					a.hover(href="about.html") О нас
+				li(class=(page=="news") ? 'active' : '')
+					a.hover(href="news.html") Новости
+				li(class=(page=="team") ? 'active' : '')
+					a.hover(href="team.html") Команда
 				li.desktop-logo
-					img.img(src="img/toplogo.png", alt="Inview")
-				li
-					a.hover(href="#") Видео
-				li
-					a.hover(href="#") Сайты
-				li
-					a.hover(href="#") Контакты
+					if page == "main"
+						img.img(src="img/toplogo.png", alt="Inview")
+					else
+						a(href="index.html")
+							img.img(src="img/toplogo.png", alt="Inview")
+				li(class=(page=="video") ? 'active' : '')
+					a.hover(href="videos.html") Видео
+				li(class=(page=="sites") ? 'active' : '')
+					a.hover(href="sites.html") Сайты
+				li(class=(page=="contacts") ? 'active' : '')
+					a.hover(href="contacts.html") Контакты
 
 
 

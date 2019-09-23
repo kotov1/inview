@@ -18,78 +18,95 @@ html(lang="ru")
 				h1.h1.hero__title Masstank - Омут
 				h4.h4.hero__subtitle музыкальный клип
 				a.btn.hero__btn.video-link.js-video(href="https://www.youtube.com/watch?v=u8rjvnzJvK8?autoplay=1&amp;rel=0") смотреть
-				a.mouse.anchor(href="#")
+				a.mouse.anchor(href="#examples")
 		// /.hero
 
 
-	// examples
-	section.section.examples
-		.container
-			.section-title
-				h2.h2 Последние работы
-					span.color-accent .
-				a.btn.section-link(href="videos.html") смотреть все
-			.examples-slider
-				.slide
-					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
-						h4.h4.video__title Masstank - Омут
-				.slide
-					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
-						h4.h4.video__title Nechaev - Новогодняя
-				.slide
-					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
-						h4.h4.video__title Masstank - Омут
-				.slide
-					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
-						h4.h4.video__title Nechaev - Новогодняя
-				.slide
-					a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
-						h4.h4.video__title Masstank - Омут
-				.slide
-					a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
-						h4.h4.video__title Nechaev - Новогодняя
-			
-			.slider-arrows
-
-	// /.examples
-
-
-	section.section.news
-		.container
-			.section-title
-				h2.h2 Новости
-					span.color-accent .
-				a.btn.section-link(href="news.html") смотреть все
-
-			.news__row
-				.news-item
-					a(href="#")
-						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.news-item__date 19 января 2019
-				.news-item
-					a(href="#")
-						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.news-item__date 19 января 2019
-				.news-item
-					a(href="#")
-						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.news-item__date 19 января 2019
-				.news-item
-					a(href="#")
-						p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.news-item__date 19 января 2019
-			
-
-	
-	// cta
-	include pug-modules/cta
-	// /.cta
+		// examples
+		section#examples.section.examples
+			.container
+				.section-title
+					h2.h2 Последние работы
+						span.color-accent .
+					a.btn.section-link(href="videos.html") смотреть все
+				.examples-slider
+					.slide
+						a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+							h4.h4.video__title Masstank - Омут
+					.slide
+						a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+							h4.h4.video__title Nechaev - Новогодняя
+					.slide
+						a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+							h4.h4.video__title Masstank - Омут
+					.slide
+						a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+							h4.h4.video__title Nechaev - Новогодняя
+					.slide
+						a.video.js-video(data-video="u8rjvnzJvK8", style="background-image: url('img/video-poster-1.jpg')")
+							h4.h4.video__title Masstank - Омут
+					.slide
+						a.video.js-video(data-video="nXqoD3ZjMnI", style="background-image: url('img/video-poster-2.jpg')")
+							h4.h4.video__title Nechaev - Новогодняя
 				
+				.slider-arrows
+
+		// /.examples
 
 
-	// footer
-	include pug-modules/footer
-	// /.footer
+		// news
+		section.section.news
+			.container
+				.section-title
+					h2.h2 Новости
+						span.color-accent .
+					a.btn.section-link(href="news.html") смотреть все
 
+				.news__row
+					.news-item
+						a(href="#")
+							p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.news-item__date 19 января 2019
+					.news-item
+						a(href="#")
+							p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.news-item__date 19 января 2019
+					.news-item
+						a(href="#")
+							p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.news-item__date 19 января 2019
+					.news-item
+						a(href="#")
+							p.news-item__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.news-item__date 19 января 2019
+				
+		// /.news
 
 		
+		// cta
+		include pug-modules/cta
+		// /.cta
+					
+
+
+		// footer
+		include pug-modules/footer
+		// /.footer
+
+
+		.modal.modal-callback.mfp-hide#modal-callback
+			.modal__inner
+				button.close-btn.mfp-close(type="button")
+				h3.h3.modal__title Оставить заявку
+				form(action="#")
+					.form-item
+						input.input(type="text", name="name", placeholder="Ваше имя", required)
+						span.input-hint Ваше имя
+					.form-item
+						input.input(type="tel", name="phone", placeholder="Ваш телефон", required)
+						span.input-hint Ваш телефон
+					.text-center
+						button.btn.submit(type="submit") отправить
+
+
+			
